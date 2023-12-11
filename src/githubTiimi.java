@@ -10,7 +10,13 @@ public class githubTiimi {
 		auto1.malli = "Passat";
 		auto1.bensanMaara = 20;
 		auto1.NaytaTiedot();
-			
+		auto1.Kiihdyta();
+		System.out.println();
+		
+		// Auto-tehtävän kohta 8.
+		Auto auto2 = new Auto("Mini", "Countryman", 0);
+		auto2.NaytaTiedot();
+		auto2.Kiihdyta();
 	}
 
 }
@@ -46,8 +52,15 @@ class Auto{
 	
 	public void Kiihdyta()
 	{
-		System.out.println("Auto kiihtyy.");
-		bensanMaara --;
+		if (bensanMaara > 0) 
+		{
+			System.out.println("Auto kiihtyy.");
+			bensanMaara --;
+		}
+		else
+		{
+			System.out.println("Bensa loppu!");
+		}
 	}
 	
 	public void NaytaTiedot()
