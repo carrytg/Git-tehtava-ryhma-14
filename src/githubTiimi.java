@@ -21,6 +21,17 @@ public class githubTiimi {
 		auto2.NaytaTiedot();
 		auto2.Kiihdyta();
 		auto2.Tankkaus();
+		System.out.println();
+		
+		// Lisätty vielä kolmas auto
+		Auto auto3 = new Auto("Kia", "Sportage", 10);
+		auto3.NaytaTiedot();
+		auto3.Kiihdyta();
+		auto3.Kiihdyta();
+		auto3.Jarruta();
+		auto3.tankkausMaara = 10;
+		auto3.Tankkaus();
+		auto3.NaytaTiedot();
 	}
 
 }
